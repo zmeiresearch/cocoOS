@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>3539763610</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\..\ports\stm32f0\inc\stm32f030.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\cocoOS_stm32f0_blink.pbd</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\..\..\..\cocoos\base\src\os_sem.c</file>
+      <file>$PROJ_DIR$\..\..\..\cocoos\base\src\os_task.c</file>
+      <file>$PROJ_DIR$\..\..\..\cocoos\base\inc\os_typedef.h</file>
+      <file>$PROJ_DIR$\..\..\..\cocoos\base\inc\os_event.h</file>
+      <file>$PROJ_DIR$\..\..\..\cocoos\base\src\os_kernel.c</file>
+      <file>$PROJ_DIR$\..\..\..\ports\stm32f0\inc\os_port.h</file>
+      <file>$PROJ_DIR$\..\..\..\cocoos\base\src\os_msgqueue.c</file>
+      <file>$PROJ_DIR$\..\..\..\cocoos\base\inc\cocoos.h</file>
+      <file>$PROJ_DIR$\..\..\..\cocoos\base\inc\os_sem.h</file>
+      <file>$PROJ_DIR$\..\..\..\cocoos\base\src\os_event.c</file>
+      <file>$PROJ_DIR$\..\..\..\cocoos\base\inc\os_applAPI.h</file>
+      <file>$PROJ_DIR$\..\..\..\cocoos\base\inc\os_assert.h</file>
+      <file>$PROJ_DIR$\..\..\..\cocoos\base\inc\os_defines.h</file>
+      <file>$PROJ_DIR$\..\..\..\cocoos\base\inc\os_msgqueue.h</file>
+      <file>$PROJ_DIR$\..\..\..\cocoos\base\inc\os_task.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\os_sem.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\os_kernel.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\os_task.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\os_msgqueue.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\os_task.pbi</file>
+      <file>$TOOLKIT_DIR$\config\linker\ST\stm32f030x8.icf</file>
+      <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
+      <file>$PROJ_DIR$\Debug\Exe\c.out</file>
+      <file>$PROJ_DIR$\Debug\Obj\os_msgqueue.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\lib\dl6M_tln.a</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\os_msgqueue.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\os_event.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\os_event.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\os_kernel.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\os_task.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
+      <file>$PROJ_DIR$\Debug\List\c.map</file>
+      <file>$PROJ_DIR$\Debug\Obj\os_sem.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\os_sem.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\os_kernel.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\os_event.o</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\os_cbk.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\os_assert.pbi</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\..\..\..\ports\stm32f0\src\os_assert.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\os_cbk.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\..\..\..\ports\stm32f0\inc\stm32f0x_rcc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\..\..\..\ports\stm32f0\src\os_cbk.c</file>
+      <file>$PROJ_DIR$\..\..\..\ports\stm32f0\inc\stm32f0x_nvic.h</file>
+      <file>$PROJ_DIR$\..\..\..\ports\stm32f0\inc\stm32f0x_gpio.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\os_assert.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\os_assert.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\os_cbk.__cstat.et</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 32 42</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\cocoos\base\src\os_sem.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 44</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 23</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 43</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 10 2 22 14 56 20 9 21 26 25 19 12 15 18 17 59 6 35 1</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 14 56 2 25 59 35 1 6 26 12 9 19 10 15 21 20 18 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\cocoos\base\src\os_task.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 27</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 40</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20 35 10 59 56 2 9 21 6 1 14 51 46 12 19 15 18 17 25 26 22</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 14 56 2 25 59 35 1 6 26 12 9 19 10 15 21 20 18 17 46 51</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\cocoos\base\src\os_kernel.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 45</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 24</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 39</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20 2 56 22 14 10 9 21 26 25 19 12 15 18 17 59 6 35 1</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 14 56 2 25 59 35 1 6 26 12 9 19 10 15 21 20 18 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\cocoos\base\src\os_msgqueue.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 28</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 36</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 33</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 6 21 2 35 20 9 14 56 10 59 12 19 15 18 17 25 26 1 22</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 14 56 2 25 59 35 1 6 26 12 9 19 10 15 21 20 18 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\cocoos\base\src\os_event.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 37</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 48</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 38</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 56 17 12 14 15 19 18 25 59 35 22 9 10 21 20 2 6 1 26</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 14 56 2 25 59 35 1 6 26 12 9 19 10 15 21 20 18 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\c.out</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 42</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 30 3 63 50 48 24 36 23 27 49 31 41 34</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 3</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 47</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2 9 20 14 26 25 51 21 56 10 62 58 0 6 59 35 1 64 12 19 15 18 17 22 61 57 46</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 46 2 25 59 35 1 6 26 51 58 64 14 56 12 9 19 10 15 21 20 18 17 0 61 62 57</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\ports\stm32f0\src\os_assert.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 52</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 63</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 65</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2 10 22 14 56 20 9 21 26 25 19 12 15 18 17 59 6 35 1</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 14 56 2 25 59 35 1 6 26 12 9 19 10 15 21 20 18 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\ports\stm32f0\src\os_cbk.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 55</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 50</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 66</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2 15 22 14 12 17 56 19 18 25 26 9 10 21 20 59 6 35 1</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 14 56 2 25 59 35 1 6 26 12 9 19 10 15 21 20 18 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\main.c</name>
+      <tool>C-STAT</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>[REBUILD_ALL]</name>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

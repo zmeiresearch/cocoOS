@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>cocoOS_stm32f0_blink/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>176</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1097</ColumnWidth1><ColumnWidth2>292</ColumnWidth2><ColumnWidth3>73</ColumnWidth3></Build>
+      <Find-in-Files>
+        <ColumnWidth0>450</ColumnWidth0>
+        <ColumnWidth1>75</ColumnWidth1>
+        <ColumnWidth2>675</ColumnWidth2>
+        <ColumnWidth3>300</ColumnWidth3>
+      </Find-in-Files>
+      <TerminalIO/>
+      <Select-Ambiguous-Definitions>
+        <ColumnWidth0>525</ColumnWidth0>
+        <ColumnWidth1>75</ColumnWidth1>
+        <ColumnWidth2>900</ColumnWidth2>
+      </Select-Ambiguous-Definitions>
+    </Static>
+    <Windows>
+      
+      
+    <Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-3999-3425</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>cocoOS_stm32f0_blink</ExpandedNode><ExpandedNode>cocoOS_stm32f0_blink/cocoOS_base</ExpandedNode><ExpandedNode>cocoOS_stm32f0_blink/cocoOS_port</ExpandedNode><ExpandedNode>cocoOS_stm32f0_blink/cocoOS_port/inc</ExpandedNode><ExpandedNode>cocoOS_stm32f0_blink/cocoOS_port/src</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd1><Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-32480-4528</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-15397-9352</Identity>
+            <TabName>Find in Files</TabName>
+            <Factory>Find-in-Files</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-24282-31851</Identity>
+            <TabName>Ambiguous Definitions</TabName>
+            <Factory>Select-Ambiguous-Definitions</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\cocoos\base\inc\os_applAPI.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>80</YPos2><SelStart2>3695</SelStart2><SelEnd2>3695</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\cocoos\base\inc\cocoos.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>59</YPos2><SelStart2>2716</SelStart2><SelEnd2>2724</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\cocoos\base\src\os_task.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>317</YPos2><SelStart2>9303</SelStart2><SelEnd2>9303</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>114</YPos2><SelStart2>6431</SelStart2><SelEnd2>6431</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\cocoos\base\src\os_kernel.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>75</YPos2><SelStart2>2767</SelStart2><SelEnd2>2767</SelEnd2></Tab><ActiveTab>4</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-06BDCF78><key>iaridepm.enu1</key></Toolbar-06BDCF78></Sizes></Row0></Top><Left><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>614</Bottom><Right>250</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>131406</sizeHorzCX><sizeHorzCY>233372</sizeHorzCY><sizeVertCX>165572</sizeVertCX><sizeVertCY>718786</sizeVertCY></Rect></Wnd1></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>198</Bottom><Right>1524</Right><x>-2</x><y>-2</y><xscreen>1526</xscreen><yscreen>200</yscreen><sizeHorzCX>1002628</sizeHorzCX><sizeHorzCY>233372</sizeHorzCY><sizeVertCX>131406</sizeVertCX><sizeVertCY>233372</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+
