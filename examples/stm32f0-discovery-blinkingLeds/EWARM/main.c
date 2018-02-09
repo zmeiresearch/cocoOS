@@ -41,11 +41,6 @@
 #define BUTTON_SAMPLE_PERIOD    (uint32_t)10        // in ms
 
 //======================================================================================================================
-// Local Data
-//======================================================================================================================
-int ledState = 0;
-
-//======================================================================================================================
 // Local function declarations
 //======================================================================================================================
 static void tick_init();
@@ -105,6 +100,9 @@ static void hardware_init()
 //! @return none
 static void led_blink_task()
 {
+    // cocoOS tasks actually resume through a direct call to their function, so all the data must be either global or 
+    // static in order to be preserved after a task_wait() call.
+    static int ledState = 0;
     task_open();
     
     while(1)
