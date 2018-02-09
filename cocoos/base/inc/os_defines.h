@@ -91,7 +91,7 @@ typedef uint32_t Mem_t;
 #endif  /* PTR_16BIT || PTR_32BIT */
 
 /** Interrupts
- * @remark Interrupt enable/disable macros. @n Platform-specifc, must be defiend in os_port.h */
+ * @remarks Interrupt enable/disable macros. @n Platform-specifc, must be defiend in os_port.h */
 #if !defined(os_enable_interrupts) || !defined(os_disable_interrupts)
 #error  "Please define both os_enable_interrupts() and os_disable_interrupts()"
 #endif  /* !os_disable_interrupts || !os_enable_interrupts) */
