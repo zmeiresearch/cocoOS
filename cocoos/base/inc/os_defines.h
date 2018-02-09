@@ -82,17 +82,17 @@ extern "C" {
 
 /** Memory size
  * @remarks Should be set to the size of address pointer. @n Platform-specific, must be defined in os_port.h. */
-#if defined(PTR_16BIT)
+#if defined(OS_PTR_16BIT)
 typedef uint16_t Mem_t;
-#elif defined(PTR_32BIT)
+#elif defined(OS_PTR_32BIT)
 typedef uint32_t Mem_t;
 #else
-#error "Please define either PTR_16BIT or PTR_32BIT depending on your architecture!"
+#error "Please define either OS_PTR_16BIT or OS_PTR_32BIT depending on your architecture!"
 #endif  /* PTR_16BIT || PTR_32BIT */
 
 /** Interrupts
  * @remark Interrupt enable/disable macros. @n Platform-specifc, must be defiend in os_port.h */
-if !defined(os_enable_interrupts) || !defined(os_disable_interrupts)
+#if !defined(os_enable_interrupts) || !defined(os_disable_interrupts)
 #error  "Please define both os_enable_interrupts() and os_disable_interrupts()"
 #endif  /* !os_disable_interrupts || !os_enable_interrupts) */
 
