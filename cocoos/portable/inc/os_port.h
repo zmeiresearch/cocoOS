@@ -33,17 +33,10 @@
  * Author: Peter Eckstrand <info@cocoos.net>
  */
  
+#ifndef OS_PORT_H_
+#define OS_PORT_H_
 
-#ifndef _os_defs
-#define _os_defs
-
-/** @file os_defines.h cocoOS user configuration */
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-#include <stdint.h>
+#error "This is an empty template, please modify it to suit you platform and requirements"
 
 /** Max number of used tasks
 * @remarks Must be defined. @n Allowed range: 0-254. Value must not be exceeded */
@@ -67,17 +60,18 @@ extern "C" {
 
 /** Round Robin scheduling
 * @remarks If defined, tasks will be scheduled ignoring the priorities */
-//#define ROUND_ROBIN
+/* #define ROUND_ROBIN */
 
 
 /** Memory size
- * @remarks Should be set to the size of address pointer */
-typedef uint32_t Mem_t;
+ * @remarks Should be set to the size of address pointer. */
+/* #define OS_PTR_16BIT */
+#define OS_PTR_32BIT
 
-#define NO_MSG_ID   0xff
-#define ISR_TID     0xfe
-#ifdef __cplusplus
-}
-#endif
+
+/** Interrupts
+ * @remark Interrupt enable/disable macros. */
+#define os_enable_interrupts()
+#define os_disable_interrupts()
 
 #endif
