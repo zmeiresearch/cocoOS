@@ -65,7 +65,7 @@ typedef struct
     unsigned long PLLXTPRE          : 1;
     unsigned long PLLMUL            : 4;
     unsigned long                   : 2;
-    unsigned long MCO               : 3;
+    unsigned long MCO               : 4;
     unsigned long MCOPREDIV         : 3;
     unsigned long PLLNODIV          : 1;
 } RCC_CFGR_BITS;
@@ -477,6 +477,36 @@ volatile __no_init union {  unsigned long RCC_CFGR2;    RCC_CFGR2_BITS      RCC_
 volatile __no_init union {  unsigned long RCC_CFGR3;    RCC_CFGR3_BITS      RCC_CFGR3_Bits   ; } @ RCC_CFGR3_ADDR   ;
 volatile __no_init union {  unsigned long RCC_CR2;      RCC_CR2_BITS        RCC_CR2_Bits     ; } @ RCC_CR2_ADDR     ;
 #elif __GNUC__
+#define RCC_AHBENR              ( * ( ( volatile uint32_t *         )   RCC_AHBENR_ADDR     ) )
+#define RCC_AHBENR_Bits         ( * ( ( volatile RCC_AHBENR_BITS *  )   RCC_AHBENR_ADDR     ) )
+#define RCC_CR                  ( * ( ( volatile uint32_t *         )   RCC_CR_ADDR         ) )
+#define RCC_CR_Bits             ( * ( ( volatile RCC_CR *           )   RCC_CR_ADDR         ) )
+#define RCC_CFGR                ( * ( ( volatile uint32_t *         )   RCC_CFGR_ADDR       ) )
+#define RCC_CFGR_Bits           ( * ( ( volatile RCC_CFGR *         )   RCC_CFGR_ADDR       ) )
+#define RCC_CIR                 ( * ( ( volatile uint32_t *         )   RCC_CIR_ADDR        ) )
+#define RCC_CIR_Bits            ( * ( ( volatile RCC_CIR *          )   RCC_CIR_ADDR        ) )
+#define RCC_APB2RSTR            ( * ( ( volatile uint32_t *         )   RCC_APB2RSTR_ADDR   ) )
+#define RCC_APB2RSTR_Bits       ( * ( ( volatile RCC_APB2RSTR *     )   RCC_APB2RSTR_ADDR   ) )
+#define RCC_APB1RSTR            ( * ( ( volatile uint32_t *         )   RCC_APB1RSTR_ADDR   ) )
+#define RCC_APB1RSTR_Bits       ( * ( ( volatile RCC_APB1RSTR_BITS *)   RCC_APB1RSTR_ADDR   ) )
+#define RCC_AHBENR              ( * ( ( volatile uint32_t *         )   RCC_AHBENR_ADDR     ) )
+#define RCC_AHBENR_Bits         ( * ( ( volatile RCC_AHBENR_BITS *  )   RCC_AHBENR_ADDR     ) )
+#define RCC_APB2ENR             ( * ( ( volatile uint32_t *         )   RCC_APB2ENR_ADDR    ) )
+#define RCC_APB2ENR_Bits        ( * ( ( volatile RCC_APB2ENR_BITS * )   RCC_APB2ENR_ADDR    ) )
+#define RCC_APB1ENR             ( * ( ( volatile uint32_t *         )   RCC_APB1ENR_ADDR    ) )
+#define RCC_APB1ENR_Bits        ( * ( ( volatile RCC_APB1ENR_BITS * )   RCC_APB1ENR_ADDR    ) )
+#define RCC_BDCR                ( * ( ( volatile uint32_t *         )   RCC_BDCR_ADDR       ) )
+#define RCC_BDCR_Bits           ( * ( ( volatile RCC_BDCR_BITS *    )   RCC_BDCR_ADDR       ) )
+#define RCC_CSR                 ( * ( ( volatile uint32_t *         )   RCC_CSR_ADDR        ) )
+#define RCC_CSR_Bits            ( * ( ( volatile RCC_CSR_BITS *     )   RCC_CSR_ADDR        ) )
+#define RCC_AHBRSTR             ( * ( ( volatile uint32_t *         )   RCC_AHBRSTR_ADDR    ) )
+#define RCC_AHBRSTR_Bits        ( * ( ( volatile RCC_AHBRSTR_BITS * )   RCC_AHBRSTR_ADDR    ) )
+#define RCC_CFGR2               ( * ( ( volatile uint32_t *         )   RCC_CFGR2_ADDR      ) )
+#define RCC_CFGR2_Bits          ( * ( ( volatile RCC_CFGR2_BITS *   )   RCC_CFGR2_ADDR      ) )
+#define RCC_CFGR3               ( * ( ( volatile uint32_t *         )   RCC_CFGR3_ADDR      ) )
+#define RCC_CFGR3_Bits          ( * ( ( volatile RCC_CFGR3_BITS *   )   RCC_CFGR3_ADDR      ) )
+#define RCC_CR2                 ( * ( ( volatile uint32_t *         )   RCC_CR2_ADDR        ) )
+#define RCC_CR2_Bits            ( * ( ( volatile RCC_CR2_BITS *     )   RCC_CR2_ADDR        ) )
 
 #else
 #error "Usupported compiler!"

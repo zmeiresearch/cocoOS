@@ -66,8 +66,10 @@ typedef struct
 volatile __no_init union {  unsigned long NVIC_SYSTICKCSR; NVIC_SYSTICKCSR_BITS NVIC_SYSTICKCSR_Bits; } @ NVIC_SYSTICKCSR_ADDR;
 volatile __no_init union {  unsigned long NVIC_SYSTICKRVR; NVIC_SYSTICKRVR_BITS NVIC_SYSTICKRVR_Bits; } @ NVIC_SYSTICKRVR_ADDR;
 #elif __GNUC__
-#define NVIC_SYSTICKRVR         ( * ( ( volatile uint32_t *         ) NVIC_SYSTICKRVR_ADDR ) )
-#define NVIC_SYSTICKRVR_Bits    ( * ( ( volatile SYSTICKCSR_BITS *  ) NVIC_SYSTICKRVR_ADDR ) )
+#define NVIC_SYSTICKCSR         ( * ( ( volatile uint32_t *         )       NVIC_SYSTICKCSR_ADDR ) )
+#define NVIC_SYSTICKCSR_Bits    ( * ( ( volatile NVIC_SYSTICKCSR_BITS *  )  NVIC_SYSTICKCSR_ADDR ) )
+#define NVIC_SYSTICKRVR         ( * ( ( volatile uint32_t *         )       NVIC_SYSTICKRVR_ADDR ) )
+#define NVIC_SYSTICKRVR_Bits    ( * ( ( volatile NVIC_SYSTICKRVR_BITS *  )  NVIC_SYSTICKRVR_ADDR ) )
 #else
 #error "Usupported compiler!"
 #endif
