@@ -43,10 +43,10 @@
 //======================================================================================================================
 // Local function declarations
 //======================================================================================================================
-static void tick_init();
-static void hardware_init();
-static void led_blink_task();
-static void button_input_task();
+static void tick_init(void);
+static void hardware_init(void);
+static void led_blink_task(void);
+static void button_input_task(void);
 
 //======================================================================================================================
 // Local functions
@@ -56,7 +56,7 @@ static void button_input_task();
 //! generated, SysTick_Handler() will be called.
 //! @param none
 //! @return none
-static void tick_init()
+static void tick_init(void)
 {
     // Configure SysTick Reload value
     NVIC_SYSTICKRVR_Bits.RELOAD = ( OS_CPU_CLOCK / OS_TICK_RATE ) - 1UL;
@@ -69,7 +69,7 @@ static void tick_init()
 //! @brief Initializes the hardware on the STM32F0308-DISCO board - the two LEDs and the push-button input
 //! @param none
 //! @return none
-static void hardware_init()
+static void hardware_init(void)
 {
     // blue & green leds are on GPIOC
     RCC_AHBENR_Bits.IOPCEN = 1;                 // Turn on GPIOC clock 
@@ -98,7 +98,7 @@ static void hardware_init()
 //! @brief A task that toggles the blue LED with a period of 2*LED_TICK_PERIOD
 //! @param none
 //! @return none
-static void led_blink_task()
+static void led_blink_task(void)
 {
     // cocoOS tasks actually resume through a direct call to their function, so all the data must be either global or 
     // static in order to be preserved after a task_wait() call.
@@ -118,7 +118,7 @@ static void led_blink_task()
 //! @brief A task that reads the state of USER push-button and sets the green LED state based on that.
 //! @param none
 //! @return none
-static void button_input_task()
+static void button_input_task(void)
 {
     task_open();
     
