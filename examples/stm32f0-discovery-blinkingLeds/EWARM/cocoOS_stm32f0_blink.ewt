@@ -2176,10 +2176,7 @@
     </group>
   </group>
   <file>
-    <name>$PROJ_DIR$\main.c</name>
-    <configuration>
-      <name>Debug</name>
-    </configuration>
+    <name>$PROJ_DIR$\..\main.c</name>
   </file>
 </project>
 
