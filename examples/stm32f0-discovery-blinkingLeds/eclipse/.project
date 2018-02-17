@@ -46,9 +46,9 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/main.c</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/main.c</locationURI>
+			<name>src/src</name>
+			<type>2</type>
+			<locationURI>PARENT-1-PROJECT_LOC/common/src</locationURI>
 		</link>
 		<link>
 			<name>cocoOS_base/inc/cocoos.h</name>

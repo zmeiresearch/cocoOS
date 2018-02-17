@@ -159,7 +159,7 @@
 						<entry excluding="exception_handlers.c|cocoOS_port|cocoOS_base|src" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="cocoOS_base"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="cocoOS_port"/>
-						<entry excluding="cocoOS_base" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -330,7 +330,7 @@
 						<entry excluding="exception_handlers.c|cocoOS_port|cocoOS_base|src" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="cocoOS_base"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="cocoOS_port"/>
-						<entry excluding="cocoOS_base" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -339,15 +339,6 @@
 	</storageModule>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 		<project id="cocoOS_stm32f0_blink.ilg.gnuarmeclipse.managedbuild.cross.target.elf.257514196" name="Executable" projectType="ilg.gnuarmeclipse.managedbuild.cross.target.elf"/>
-	</storageModule>
-	<storageModule moduleId="scannerConfiguration">
-		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		<scannerConfigBuildInfo instanceId="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.1855331249;ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.1855331249.;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.1531768884;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.804059665">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.380321686;ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.380321686.;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.558970836;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.1600677449">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="refreshScope" versionNumber="2">
@@ -359,4 +350,17 @@
 		</configuration>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.380321686;ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.380321686.;ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.1780319686;ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.input.1242974477">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.1855331249;ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.1855331249.;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.1531768884;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.804059665">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.380321686;ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.380321686.;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.558970836;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.1600677449">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cproject>

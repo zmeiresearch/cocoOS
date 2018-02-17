@@ -54,12 +54,17 @@ extern unsigned int __bss_end__;
 //======================================================================================================================
 // Local functions
 //======================================================================================================================
-// The implementation for the exit routine; for embedded
-// applications, a system reset will be performed.
+inline void __attribute__((always_inline)) _reset()
+{
+    // TODO
+}
+
+// Exit routine implementation. In Debug, an infinite cycle to allow looking at the stack trace. Otherwise, do a system
+// reset
 void __attribute__((weak)) _exit(int code __attribute__((unused)))
 {
 #if !defined(DEBUG)
-    __reset_hardware();
+    _reset();
 #endif
 
     while (1)

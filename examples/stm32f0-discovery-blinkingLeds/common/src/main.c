@@ -156,5 +156,5 @@ int main()
     os_start();
     
     // we should never reach this
-    exit(0);
+    return 0;
 }

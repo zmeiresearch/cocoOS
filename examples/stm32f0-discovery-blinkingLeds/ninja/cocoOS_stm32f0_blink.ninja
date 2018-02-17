@@ -1,0 +1,56 @@
+# make sure we use a reasonably-recent ninja
+ninja_required_version = 1.5
+builddir = build
+
+# Paths to the various pieces of code that comrise the demo project
+cocoos_base = ../../../cocoos/base
+cocoos_port = ../../../ports/stm32f0
+demo_src = ../common/src
+
+# Compiler flags
+warnflags = -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wpadded -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -Wunused -Wuninitialized
+cgenflags = -fsigned-char -ffunction-sections -fdata-sections -ffreestanding
+buildflags = -Og -g3 -DDEBUG 
+cpuflags = -mcpu=cortex-m0 -mthumb -DSTM32F030 -DHSE_VALUE=8000000
+includeflags = -I${cocoos_base}/inc -I${cocoos_port}/inc
+cflags = ${buildflags} ${cpuflags} ${cgenflags} ${warnflags} ${includeflags}
+
+# Linker flags
+ldscript = ../common/linker/stm32f030x8.ld
+ldflags = -mthumb -mcpu=cortex-m0 -Og -g3 -T${ldscript} -nostartfiles -Xlinker --gc-sections -Wl,-Map=cocoOS_stm32f0_blink.map
+
+rule compile
+    command = arm-none-eabi-gcc $cflags -c $in -o $out
+
+rule link
+    command = arm-none-eabi-gcc ${ldflags} $in -o $out
+
+rule elf2hex
+    command = arm-none-eabi-objcopy -O ihex $in $out
+
+rule elf2bin
+    command = arm-none-eabi-objcopy -O binary $in $out
+
+# CocoOS source files 
+build os_event.o:       compile ${cocoos_base}/src/os_event.c
+build os_kernel.o:      compile ${cocoos_base}/src/os_kernel.c
+build os_msgqueue.o:    compile ${cocoos_base}/src/os_msgqueue.c
+build os_sem.o:         compile ${cocoos_base}/src/os_sem.c
+build os_task.o:        compile ${cocoos_base}/src/os_task.c
+build os_assert.o:      compile ${cocoos_port}/src/os_assert.c
+build os_cbk.o:         compile ${cocoos_port}/src/os_cbk.c 
+
+# Demo files 
+build main.o:           compile ${demo_src}/main.c
+build vectors.o:        compile ${demo_src}/vectors.c
+build startup.o:        compile ${demo_src}/startup.c
+
+# build the elf file
+build cocoOS_stm32f0_blink.elf: link os_event.o os_kernel.o os_msgqueue.o os_sem.o os_task.o os_assert.o os_cbk.o vectors.o startup.o main.o
+
+# build .bin file
+build cocoOS_stm32f0_blink.bin: elf2bin cocoOS_stm32f0_blink.elf
+
+# build .hex file
+build cocoOS_stm32f0_blink.hex: elf2hex cocoOS_stm32f0_blink.elf
+
