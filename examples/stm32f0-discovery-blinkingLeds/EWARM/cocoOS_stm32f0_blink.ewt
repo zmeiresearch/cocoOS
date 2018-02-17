@@ -2176,7 +2176,7 @@
     </group>
   </group>
   <file>
-    <name>$PROJ_DIR$\..\main.c</name>
+    <name>$PROJ_DIR$\..\common\src\main.c</name>
   </file>
 </project>
 
